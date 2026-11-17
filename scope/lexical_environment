@@ -1,0 +1,105 @@
+// let company = "ABC";
+
+// function employee() {
+//     let name = "Amulya";
+
+//     function details() {
+//         let role = "Backend Developer";
+
+//         console.log(name);
+//         console.log(company);
+//         console.log(role);
+//     }
+
+//     details();
+// }
+
+// employee();
+
+
+
+
+
+
+
+
+
+
+// let companyName = "ABC Technologies";
+
+// function calculateSalary() {
+//     let basicSalary = 30000;
+//     let bonus = 5000;
+
+//     function getTotalSalary() {
+//         return basicSalary + bonus;
+//     }
+
+//     console.log(companyName);
+//     console.log(getTotalSalary());
+// }
+
+// calculateSalary();
+
+
+
+// let a = 100;
+
+// function first() {
+//     let b = 200;
+
+//     function second() {
+//         let c = 300;
+
+//         console.log(a);
+//         console.log(b);
+//         console.log(c);
+//     }
+
+//     second();
+// }
+
+// first();
+
+
+
+//var at global leve
+// var val=10;
+// function outer(){
+//     console.log(val); //10
+//     function inner(){
+//         console.log(val)//10
+//     }
+//     inner();
+// }
+// outer();
+// console.log(val);//10
+
+
+
+//var at functional scope
+// function outer2(){
+//     var val2=13;
+//     console.log(val2); //13
+//     function inner2(){
+//         console.log(val2); //13
+//     }
+//     inner2()
+// }
+// outer2()
+// console.log(val2); // reference error
+
+//var at block level - but it does not follow block level it takes functional level restrictions
+function outer3(){
+    console.log("hello");//hello
+    if(true){
+        var a=111;
+        console.log(a);//111
+        function inner3(){
+            console.log(a)//111
+        }
+        inner3()
+    }
+}
+outer3()
+console.log(a)// reference error
